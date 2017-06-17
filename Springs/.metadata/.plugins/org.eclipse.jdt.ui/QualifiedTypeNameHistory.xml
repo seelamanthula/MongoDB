@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="spark.Spark"/>
+<fullyQualifiedTypeName name="spark.Route"/>
+<fullyQualifiedTypeName name="freemarker.template.Configuration"/>
+<fullyQualifiedTypeName name="freemarker.template.Template"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.bson.json.JsonWriter"/>
+<fullyQualifiedTypeName name="java.io.StringWriter"/>
+<fullyQualifiedTypeName name="org.bson.json.JsonWriterSettings"/>
+<fullyQualifiedTypeName name="org.bson.json.JsonMode"/>
+<fullyQualifiedTypeName name="org.bson.codecs.DocumentCodec"/>
+<fullyQualifiedTypeName name="org.bson.codecs.EncoderContext"/>
+<fullyQualifiedTypeName name="com.mongodb.MongoClient"/>
+<fullyQualifiedTypeName name="com.mongodb.client.model.Projections"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.mongodb.client.model.Sorts"/>
+<fullyQualifiedTypeName name="org.bson.conversions.Bson"/>
+<fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
+<fullyQualifiedTypeName name="com.mongodb.client.MongoCursor"/>
+<fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.mongodb.client.MongoDatabase"/>
+<fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
+<fullyQualifiedTypeName name="org.bson.Document"/>
+</qualifiedTypeNameHistroy>

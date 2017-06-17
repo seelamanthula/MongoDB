@@ -1,0 +1,45 @@
+package com.week7;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.bson.Document;
+import org.bson.conversions.Bson;
+
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+import com.mongodb.client.AggregateIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+
+		MongoClient client = new MongoClient(new ServerAddress("localhost", 27017));
+		MongoDatabase db = client.getDatabase("enron");
+		MongoCollection collect = db.getCollection("messages");
+		
+		System.out.println("Count : "+collect.count());
+	
+		  AggregateIterable<Document> output = collect.aggregate(Arrays.asList(
+		            new Document("$unwind", "$headers.To"),
+		            new Document("$group", new Document("$addToSet", "$headers.To")),
+		            new Document("$unwind", "$headers.To"),
+		            new Document("$group", new Document("$_id", 
+		            						new Document("sender_id", "$headers.From").append("receiver_id", "#headers.To"))
+		            						.append("count",new Document("$sum", "1"))),
+		            new Document("$limit", 5),
+		            new Document("$project", new Document("_id", 1).append("count", "1"))
+		        ));
+
+		    for (Document dbObject : output)
+		    {
+		        System.out.println(dbObject);
+		    }
+		
+	}
+
+}

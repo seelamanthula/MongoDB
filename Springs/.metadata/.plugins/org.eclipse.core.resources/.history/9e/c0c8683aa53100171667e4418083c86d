@@ -1,0 +1,19 @@
+package com.week7.ques5;
+
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class Question5 {
+
+	public void main(String[] args) {
+		
+		MongoClient client = new MongoClient(new ServerAddress("localhost",27017));
+		MongoDatabase db = client.getDatabase("week7");
+		MongoCollection collect = db.getCollection("ques5");
+		
+		
+		
+	}
+}

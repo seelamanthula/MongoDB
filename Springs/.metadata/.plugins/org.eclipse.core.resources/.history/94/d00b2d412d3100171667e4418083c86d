@@ -1,0 +1,18 @@
+package com.week7;
+
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+import com.mongodb.client.MongoDatabase;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+
+		MongoClient client = new MongoClient(new ServerAddress("localhost", 27017));
+		MongoDatabase db = client.getDatabase("enron");
+		MongoCollection collect = db.getCollection("messages");
+		
+		
+	}
+
+}

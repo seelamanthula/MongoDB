@@ -1,0 +1,15 @@
+package com.week7;
+
+import com.mongodb.MongoClient;
+import com.mongodb.ServerAddress;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+
+		MongoClient client = new MongoClient(new ServerAddress("localhost", 27017));
+		
+		
+	}
+
+}
