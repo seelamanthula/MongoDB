@@ -1,0 +1,109 @@
+2017-04-30T02:53:01.807-0400 I CONTROL  [initandlisten] MongoDB starting : pid=11308 port=27018 dbpath=C:\data\rs2 64-bit host=Lenovo-PC
+2017-04-30T02:53:01.807-0400 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-04-30T02:53:01.807-0400 I CONTROL  [initandlisten] db version v3.4.2
+2017-04-30T02:53:01.807-0400 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-04-30T02:53:01.807-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten] modules: none
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten] build environment:
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-30T02:53:01.808-0400 I CONTROL  [initandlisten] options: { net: { port: 27018 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "C:\data\rs2", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "2.log" } }
+2017-04-30T02:53:01.824-0400 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3540M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-30T02:53:03.908-0400 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-04-30T02:53:03.908-0400 I CONTROL  [initandlisten] 
+2017-04-30T02:53:03.908-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-04-30T02:53:03.908-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-04-30T02:53:03.908-0400 I CONTROL  [initandlisten] 
+2017-04-30T02:53:04.622-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/rs2/diagnostic.data'
+2017-04-30T02:53:05.004-0400 I REPL     [initandlisten] Did not find local voted for document at startup.
+2017-04-30T02:53:05.004-0400 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-04-30T02:53:05.006-0400 I NETWORK  [thread1] waiting for connections on port 27018
+2017-04-30T02:54:06.021-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54059 #1 (1 connection now open)
+2017-04-30T02:54:06.024-0400 I -        [conn1] end connection 127.0.0.1:54059 (1 connection now open)
+2017-04-30T02:54:07.294-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54065 #2 (1 connection now open)
+2017-04-30T02:54:07.295-0400 I NETWORK  [conn2] received client metadata from 127.0.0.1:54065 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:07.297-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T02:54:09.503-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54070 #3 (2 connections now open)
+2017-04-30T02:54:09.504-0400 I -        [conn3] end connection 127.0.0.1:54070 (2 connections now open)
+2017-04-30T02:54:09.565-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017
+2017-04-30T02:54:10.078-0400 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-04-30T02:54:10.944-0400 I REPL     [replication-0] Starting initial sync (attempt 1 of 10)
+2017-04-30T02:54:10.944-0400 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59058a0b005b61ccf7824f7e') } }
+2017-04-30T02:54:10.944-0400 I REPL     [ReplicationExecutor] This node is localhost:27018 in the config
+2017-04-30T02:54:10.945-0400 I REPL     [ReplicationExecutor] transition to STARTUP2
+2017-04-30T02:54:10.945-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27019
+2017-04-30T02:54:10.945-0400 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2017-04-30T02:54:11.843-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54076 #4 (2 connections now open)
+2017-04-30T02:54:11.843-0400 I NETWORK  [conn4] received client metadata from 127.0.0.1:54076 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:11.950-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27019
+2017-04-30T02:54:11.950-0400 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state STARTUP2
+2017-04-30T02:54:16.285-0400 I REPL     [replication-0] sync source candidate: localhost:27017
+2017-04-30T02:54:16.285-0400 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2017-04-30T02:54:16.285-0400 I REPL     [replication-0] ******
+2017-04-30T02:54:16.285-0400 I REPL     [replication-0] creating replication oplog of size: 64MB...
+2017-04-30T02:54:16.440-0400 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-04-30T02:54:16.440-0400 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-04-30T02:54:16.440-0400 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2017-04-30T02:54:17.011-0400 I REPL     [replication-0] ******
+2017-04-30T02:54:17.011-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:54:18.018-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:54:18.020-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:54:19.031-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:54:19.124-0400 I REPL     [replication-1] CollectionCloner::start called, on ns:admin.system.version
+2017-04-30T02:54:20.105-0400 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-04-30T02:54:20.105-0400 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-30T02:54:20.462-0400 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2017-04-30T02:54:20.462-0400 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-30T02:54:20.463-0400 I COMMAND  [InitialSyncInserters-admin.system.version0] setting featureCompatibilityVersion to 3.4
+2017-04-30T02:54:20.555-0400 I COMMAND  [conn2] command local.replset.election command: replSetRequestVotes { replSetRequestVotes: 1, setName: "m101", dryRun: false, term: 1, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp 1493535247000|1, t: -1 } } numYields:0 reslen:63 locks:{ Global: { acquireCount: { r: 4, w: 2 } }, Database: { acquireCount: { r: 1, W: 2 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 1376ms
+2017-04-30T02:54:20.556-0400 I -        [conn2] end connection 127.0.0.1:54065 (2 connections now open)
+2017-04-30T02:54:20.751-0400 I REPL     [replication-1] No need to apply operations. (currently at { : Timestamp 1493535247000|1 })
+2017-04-30T02:54:20.751-0400 I REPL     [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: Callback canceled. Last fetched optime and hash: { ts: Timestamp 1493535247000|1, t: -1 }[6600546609730918848]
+2017-04-30T02:54:20.751-0400 I REPL     [replication-1] Initial sync attempt finishing up.
+2017-04-30T02:54:20.752-0400 I REPL     [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1493535250944), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp 1493535247000|1, initialSyncOplogEnd: Timestamp 1493535247000|1, databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1493535258024), end: new Date(1493535260751), elapsedMillis: 2727, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 2, fetchedBatches: 1, start: new Date(1493535259124), end: new Date(1493535260751), elapsedMillis: 1627 } } } }
+2017-04-30T02:54:20.946-0400 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2017-04-30T02:54:20.986-0400 I REPL     [replication-1] initial sync done; took 9s.
+2017-04-30T02:54:20.986-0400 I REPL     [replication-1] Starting replication fetcher thread
+2017-04-30T02:54:20.986-0400 I REPL     [replication-1] Starting replication applier thread
+2017-04-30T02:54:20.986-0400 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-04-30T02:54:20.986-0400 I REPL     [replication-1] Starting replication reporter thread
+2017-04-30T02:54:20.986-0400 I REPL     [rsSync] transition to RECOVERING
+2017-04-30T02:54:20.987-0400 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state SECONDARY
+2017-04-30T02:54:20.988-0400 I REPL     [rsSync] transition to SECONDARY
+2017-04-30T02:54:21.527-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54089 #5 (2 connections now open)
+2017-04-30T02:54:21.528-0400 I NETWORK  [conn5] received client metadata from 127.0.0.1:54089 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:21.528-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54090 #6 (3 connections now open)
+2017-04-30T02:54:21.529-0400 I NETWORK  [conn6] received client metadata from 127.0.0.1:54090 conn6: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:25.990-0400 I REPL     [rsBackgroundSync] sync source candidate: localhost:27019
+2017-04-30T02:54:25.990-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2017-04-30T02:54:27.004-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019
+2017-04-30T02:54:27.006-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2017-04-30T02:54:28.013-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019
+2017-04-30T02:55:21.532-0400 I -        [conn5] end connection 127.0.0.1:54089 (3 connections now open)
+2017-04-30T02:56:40.917-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54105 #7 (3 connections now open)
+2017-04-30T02:56:40.959-0400 I -        [conn7] end connection 127.0.0.1:54105 (3 connections now open)
+2017-04-30T02:56:46.023-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54109 #8 (3 connections now open)
+2017-04-30T02:56:46.040-0400 I -        [conn8] end connection 127.0.0.1:54109 (3 connections now open)
+2017-04-30T03:00:34.216-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54185 #9 (3 connections now open)
+2017-04-30T03:00:34.216-0400 I NETWORK  [conn9] received client metadata from 127.0.0.1:54185 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T03:01:40.234-0400 I -        [conn9] end connection 127.0.0.1:54185 (3 connections now open)
+2017-04-30T03:03:15.907-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54189 #10 (3 connections now open)
+2017-04-30T03:03:15.907-0400 I NETWORK  [conn10] received client metadata from 127.0.0.1:54189 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T03:05:44.083-0400 I COMMAND  [conn10] terminating, shutdown command received
+2017-04-30T03:05:44.083-0400 I NETWORK  [conn10] shutdown: going to close listening sockets...
+2017-04-30T03:05:44.083-0400 I NETWORK  [conn10] closing listening socket: 476
+2017-04-30T03:05:44.083-0400 I NETWORK  [conn10] shutdown: going to flush diaglog...
+2017-04-30T03:05:44.083-0400 I REPL     [conn10] shutting down replication subsystems
+2017-04-30T03:05:44.083-0400 I REPL     [conn10] Stopping replication reporter thread
+2017-04-30T03:05:44.083-0400 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27019: CallbackCanceled: Reporter no longer valid
+2017-04-30T03:05:44.083-0400 I REPL     [conn10] Stopping replication fetcher thread
+2017-04-30T03:05:44.083-0400 I REPL     [conn10] Stopping replication applier thread
+2017-04-30T03:05:44.084-0400 I REPL     [conn10] Stopping replication storage threads
+2017-04-30T03:05:44.085-0400 I FTDC     [conn10] Shutting down full-time diagnostic data capture
+2017-04-30T03:05:44.088-0400 I STORAGE  [conn10] WiredTigerKVEngine shutting down
+2017-04-30T03:05:46.550-0400 I STORAGE  [conn10] shutdown: removing fs lock...
+2017-04-30T03:05:46.551-0400 I CONTROL  [conn10] now exiting
+2017-04-30T03:05:46.551-0400 I CONTROL  [conn10] shutting down with code:0
+2017-04-30T03:05:46.551-0400 I CONTROL  [initandlisten] shutting down with code:0

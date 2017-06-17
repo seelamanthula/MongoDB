@@ -1,0 +1,389 @@
+2017-04-30T02:53:01.804-0400 I CONTROL  [initandlisten] MongoDB starting : pid=2956 port=27019 dbpath=C:\data\rs3 64-bit host=Lenovo-PC
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] db version v3.4.2
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] modules: none
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] build environment:
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-30T02:53:01.805-0400 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "C:\data\rs3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "3.log" } }
+2017-04-30T02:53:01.824-0400 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3540M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-30T02:53:04.009-0400 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-04-30T02:53:04.009-0400 I CONTROL  [initandlisten] 
+2017-04-30T02:53:04.009-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-04-30T02:53:04.010-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-04-30T02:53:04.010-0400 I CONTROL  [initandlisten] 
+2017-04-30T02:53:04.733-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/rs3/diagnostic.data'
+2017-04-30T02:53:05.194-0400 I REPL     [initandlisten] Did not find local voted for document at startup.
+2017-04-30T02:53:05.194-0400 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-04-30T02:53:05.196-0400 I NETWORK  [thread1] waiting for connections on port 27019
+2017-04-30T02:54:06.282-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54061 #1 (1 connection now open)
+2017-04-30T02:54:06.283-0400 I -        [conn1] end connection 127.0.0.1:54061 (1 connection now open)
+2017-04-30T02:54:07.291-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54064 #2 (1 connection now open)
+2017-04-30T02:54:07.292-0400 I NETWORK  [conn2] received client metadata from 127.0.0.1:54064 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:07.294-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T02:54:09.502-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017
+2017-04-30T02:54:09.578-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54073 #3 (2 connections now open)
+2017-04-30T02:54:09.588-0400 I -        [conn3] end connection 127.0.0.1:54073 (2 connections now open)
+2017-04-30T02:54:10.048-0400 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-04-30T02:54:10.839-0400 I REPL     [replication-0] Starting initial sync (attempt 1 of 10)
+2017-04-30T02:54:10.839-0400 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59058a0b005b61ccf7824f7e') } }
+2017-04-30T02:54:10.839-0400 I REPL     [ReplicationExecutor] This node is localhost:27019 in the config
+2017-04-30T02:54:10.840-0400 I REPL     [ReplicationExecutor] transition to STARTUP2
+2017-04-30T02:54:10.840-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T02:54:10.841-0400 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2017-04-30T02:54:11.844-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27018
+2017-04-30T02:54:11.844-0400 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state STARTUP2
+2017-04-30T02:54:11.949-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54077 #4 (2 connections now open)
+2017-04-30T02:54:11.949-0400 I NETWORK  [conn4] received client metadata from 127.0.0.1:54077 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:16.239-0400 I REPL     [replication-0] sync source candidate: localhost:27017
+2017-04-30T02:54:16.240-0400 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2017-04-30T02:54:16.240-0400 I REPL     [replication-0] ******
+2017-04-30T02:54:16.240-0400 I REPL     [replication-0] creating replication oplog of size: 64MB...
+2017-04-30T02:54:16.316-0400 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-04-30T02:54:16.317-0400 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-04-30T02:54:16.317-0400 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2017-04-30T02:54:16.891-0400 I REPL     [replication-0] ******
+2017-04-30T02:54:16.892-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:54:17.904-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:54:17.906-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:54:18.910-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:54:18.930-0400 I REPL     [replication-1] CollectionCloner::start called, on ns:admin.system.version
+2017-04-30T02:54:20.076-0400 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-04-30T02:54:20.077-0400 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-30T02:54:20.432-0400 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2017-04-30T02:54:20.432-0400 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-30T02:54:20.433-0400 I COMMAND  [InitialSyncInserters-admin.system.version0] setting featureCompatibilityVersion to 3.4
+2017-04-30T02:54:20.510-0400 I COMMAND  [conn2] command local.replset.election command: replSetRequestVotes { replSetRequestVotes: 1, setName: "m101", dryRun: false, term: 1, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp 1493535247000|1, t: -1 } } numYields:0 reslen:63 locks:{ Global: { acquireCount: { r: 4, w: 2 } }, Database: { acquireCount: { r: 1, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 18610 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 1330ms
+2017-04-30T02:54:20.724-0400 I REPL     [replication-1] No need to apply operations. (currently at { : Timestamp 1493535247000|1 })
+2017-04-30T02:54:20.724-0400 I REPL     [replication-1] Finished fetching oplog during initial sync: CallbackCanceled: Callback canceled. Last fetched optime and hash: { ts: Timestamp 1493535247000|1, t: -1 }[6600546609730918848]
+2017-04-30T02:54:20.724-0400 I REPL     [replication-1] Initial sync attempt finishing up.
+2017-04-30T02:54:20.725-0400 I REPL     [replication-1] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1493535250839), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp 1493535247000|1, initialSyncOplogEnd: Timestamp 1493535247000|1, databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1493535257911), end: new Date(1493535260723), elapsedMillis: 2812, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 2, fetchedBatches: 1, start: new Date(1493535258930), end: new Date(1493535260723), elapsedMillis: 1793 } } } }
+2017-04-30T02:54:20.841-0400 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2017-04-30T02:54:20.962-0400 I REPL     [replication-1] initial sync done; took 9s.
+2017-04-30T02:54:20.962-0400 I REPL     [replication-1] Starting replication fetcher thread
+2017-04-30T02:54:20.962-0400 I REPL     [replication-1] Starting replication applier thread
+2017-04-30T02:54:20.962-0400 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-04-30T02:54:20.962-0400 I REPL     [replication-1] Starting replication reporter thread
+2017-04-30T02:54:20.962-0400 I REPL     [rsSync] transition to RECOVERING
+2017-04-30T02:54:20.964-0400 I REPL     [rsSync] transition to SECONDARY
+2017-04-30T02:54:21.529-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54091 #5 (3 connections now open)
+2017-04-30T02:54:21.530-0400 I NETWORK  [conn5] received client metadata from 127.0.0.1:54091 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:25.964-0400 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state SECONDARY
+2017-04-30T02:54:25.965-0400 I REPL     [rsBackgroundSync] sync source candidate: localhost:27017
+2017-04-30T02:54:25.967-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:54:26.973-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:54:27.003-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54095 #6 (4 connections now open)
+2017-04-30T02:54:27.004-0400 I NETWORK  [conn6] received client metadata from 127.0.0.1:54095 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:28.011-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54097 #7 (5 connections now open)
+2017-04-30T02:54:28.012-0400 I NETWORK  [conn7] received client metadata from 127.0.0.1:54097 conn7: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T02:54:41.713-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535261000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 659 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:54:51.715-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535271000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 643 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:55:20.526-0400 I -        [conn2] end connection 127.0.0.1:54064 (5 connections now open)
+2017-04-30T02:55:51.721-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535331000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 591 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:56:01.720-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535341000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 618 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9994ms
+2017-04-30T02:56:11.721-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535351000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 629 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9996ms
+2017-04-30T02:56:21.722-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535361000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 206 } }, Database: { acquireCount: { r: 2 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 70 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:56:40.914-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54104 #8 (5 connections now open)
+2017-04-30T02:56:40.959-0400 I -        [conn8] end connection 127.0.0.1:54104 (5 connections now open)
+2017-04-30T02:56:46.021-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54108 #9 (5 connections now open)
+2017-04-30T02:56:46.039-0400 I -        [conn9] end connection 127.0.0.1:54108 (5 connections now open)
+2017-04-30T02:56:46.779-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:56:47.785-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:57:11.728-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535411000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 584 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9996ms
+2017-04-30T02:57:31.729-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535431000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 654 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:57:51.731-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535451000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 624 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9997ms
+2017-04-30T02:58:49.311-0400 I REPL     [replication-1] Restarting oplog query due to error: ExceededTimeLimit: Operation timed out, request was RemoteCommand 1021 -- target:localhost:27017 db:local expDate:2017-04-30T02:58:49.310-0400 cmd:{ getMore: 17968563855, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535513000|2, t: 1 } }. Last fetched optime (with hash): { ts: Timestamp 1493535513000|2, t: 1 }[-7248618170678209776]. Restarts remaining: 3
+2017-04-30T02:58:49.312-0400 I REPL     [replication-1] Scheduled new oplog query Fetcher source: localhost:27017 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535513000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } query metadata: { $replData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 1049 -- target:localhost:27017 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535513000|2 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2017-04-30T02:58:49.514-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2017-04-30T02:58:50.521-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017
+2017-04-30T02:59:31.738-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535551000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 164 } }, Database: { acquireCount: { r: 2 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 70 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9995ms
+2017-04-30T03:00:01.740-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535581000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 384 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9996ms
+2017-04-30T03:01:46.994-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54187 #10 (5 connections now open)
+2017-04-30T03:01:46.994-0400 I NETWORK  [conn10] received client metadata from 127.0.0.1:54187 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T03:02:11.751-0400 I COMMAND  [conn7] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535711000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 633 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9996ms
+2017-04-30T03:02:42.495-0400 I -        [conn10] end connection 127.0.0.1:54187 (5 connections now open)
+2017-04-30T03:05:21.766-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535901000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 208 } }, Database: { acquireCount: { r: 2 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 88 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9995ms
+2017-04-30T03:05:41.768-0400 I COMMAND  [conn6] command local.oplog.rs command: getMore { getMore: 35497544690, collection: "oplog.rs", maxTimeMS: 5000, term: 1, lastKnownCommittedOpTime: { ts: Timestamp 1493535921000|1, t: 1 } } originatingCommand: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493535247000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } planSummary: COLLSCAN cursorid:35497544690 keysExamined:0 docsExamined:0 numYields:0 nreturned:0 reslen:292 locks:{ Global: { acquireCount: { r: 4 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 588 } }, Database: { acquireCount: { r: 2 } }, oplog: { acquireCount: { r: 2 } } } protocol:op_command 9996ms
+2017-04-30T03:05:45.325-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; InterruptedAtShutdown: interrupted at shutdown
+2017-04-30T03:05:45.326-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; InterruptedAtShutdown: interrupted at shutdown
+2017-04-30T03:05:45.327-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; InterruptedAtShutdown: interrupted at shutdown
+2017-04-30T03:05:46.565-0400 I -        [conn4] end connection 127.0.0.1:54077 (4 connections now open)
+2017-04-30T03:05:46.565-0400 I -        [conn7] end connection 127.0.0.1:54097 (3 connections now open)
+2017-04-30T03:05:46.774-0400 I -        [conn6] end connection 127.0.0.1:54095 (2 connections now open)
+2017-04-30T03:05:47.327-0400 I ASIO     [ReplicationExecutor] dropping unhealthy pooled connection to localhost:27018
+2017-04-30T03:05:47.327-0400 I ASIO     [ReplicationExecutor] after drop, pool was empty, going to spawn some connections
+2017-04-30T03:05:47.327-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:05:49.339-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:49.339-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:49.339-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:05:51.345-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:51.345-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:51.345-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:05:53.348-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:53.349-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:55.349-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:05:57.350-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:57.350-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:57.351-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:05:59.361-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:59.362-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:05:59.362-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:01.368-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:01.368-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:03.369-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:05.367-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:05.367-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:05.367-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:07.373-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:07.373-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:07.373-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:09.379-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:09.380-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:11.381-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:13.388-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:13.388-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:13.388-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:15.392-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:15.393-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:15.393-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:17.394-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:17.394-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:19.394-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:21.397-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:21.398-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:21.398-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:23.404-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:23.404-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:23.404-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:25.411-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:25.412-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:27.413-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:29.413-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:29.414-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:29.414-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:31.419-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:31.420-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:31.420-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:33.427-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:33.427-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:35.428-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:37.437-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:37.437-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:37.437-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:39.443-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:39.443-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:39.444-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:41.450-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:41.450-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:43.450-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:45.446-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:45.446-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:45.446-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:47.451-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:47.451-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:47.452-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:49.457-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:49.458-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:51.458-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:53.465-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:53.465-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:53.466-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:55.471-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:55.471-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:55.472-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:06:57.478-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:57.478-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:06:59.478-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:01.484-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:01.485-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:01.485-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:03.490-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:03.491-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:03.491-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:05.498-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:05.499-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:07.499-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:09.508-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:09.509-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:09.509-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:11.376-0400 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2017-04-30T03:07:11.514-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:11.514-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:11.514-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:11.841-0400 I REPL     [replication-0] Restarting oplog query due to error: InterruptedDueToReplStateChange: operation was interrupted. Last fetched optime (with hash): { ts: Timestamp 1493536021000|1, t: 1 }[8684869573392113915]. Restarts remaining: 3
+2017-04-30T03:07:11.842-0400 I REPL     [replication-0] Scheduled new oplog query Fetcher source: localhost:27017 database: local query: { find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493536021000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } query metadata: { $replData: 1, $ssm: { $secondaryOk: true } } active: 1 timeout: 10000ms shutting down?: 0 first: 1 firstCommandScheduler: RemoteCommandRetryScheduler request: RemoteCommand 2850 -- target:localhost:27017 db:local cmd:{ find: "oplog.rs", filter: { ts: { $gte: Timestamp 1493536021000|1 } }, tailable: true, oplogReplay: true, awaitData: true, maxTimeMS: 60000, term: 1 } active: 1 callbackHandle.valid: 1 callbackHandle.cancelled: 0 attempt: 1 retryPolicy: RetryPolicyImpl maxAttempts: 1 maxTimeMillis: -1ms
+2017-04-30T03:07:11.842-0400 I REPL     [replication-1] Choosing new sync source because our current sync source, localhost:27017, has an OpTime ({ ts: Timestamp 1493536021000|1, t: 1 }) which is not ahead of ours ({ ts: Timestamp 1493536021000|1, t: 1 }), it does not have a sync source, and it's not the primary (sync source does not know the primary)
+2017-04-30T03:07:11.843-0400 I REPL     [replication-1] Canceling oplog query because we have to choose a new sync source. Current source: localhost:27017, OpTime { ts: Timestamp 0|0, t: -1 }, its sync source index:-1
+2017-04-30T03:07:11.843-0400 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source localhost:27017 (last visible optime: { ts: Timestamp 0|0, t: -1 }; config version: 1; sync source index: -1; primary index: -1) is no longer valid
+2017-04-30T03:07:11.843-0400 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-04-30T03:07:11.844-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:12.491-0400 I -        [conn5] end connection 127.0.0.1:54091 (1 connection now open)
+2017-04-30T03:07:13.518-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:13.519-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:13.854-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:16.813-0400 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27017: InvalidSyncSource: Sync source was cleared. Was localhost:27017
+2017-04-30T03:07:16.844-0400 I ASIO     [ReplicationExecutor] dropping unhealthy pooled connection to localhost:27017
+2017-04-30T03:07:16.844-0400 I ASIO     [ReplicationExecutor] after drop, pool was empty, going to spawn some connections
+2017-04-30T03:07:16.844-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:18.520-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:18.848-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:18.849-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:18.849-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:20.527-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:20.527-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:20.527-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:20.838-0400 I REPL     [ReplicationExecutor] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2017-04-30T03:07:20.839-0400 I REPL     [ReplicationExecutor] conducting a dry run election to see if we could be elected
+2017-04-30T03:07:20.839-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:20.839-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:20.847-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:20.847-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:20.847-0400 I REPL     [ReplicationExecutor] VoteRequester(term 1 dry run) failed to receive response from localhost:27017: HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:20.848-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:22.525-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.525-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.525-0400 I REPL     [ReplicationExecutor] VoteRequester(term 1 dry run) failed to receive response from localhost:27018: HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.525-0400 I REPL     [ReplicationExecutor] not running for primary, we received insufficient votes
+2017-04-30T03:07:22.525-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:22.845-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.846-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.856-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:22.856-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:24.532-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:24.533-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:27.856-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:29.533-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:29.856-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:29.856-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:29.857-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:31.534-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:31.535-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:31.535-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:31.707-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:07:31.865-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:31.865-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:31.865-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:33.541-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:33.541-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:33.541-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:33.872-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:33.872-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:35.546-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:35.546-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:38.873-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:40.547-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:40.880-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:40.881-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:40.881-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:42.166-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:07:42.549-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:42.549-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:42.549-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:42.890-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:42.890-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:42.890-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:44.546-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:44.547-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:44.547-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:44.897-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:44.897-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:46.552-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:46.552-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:49.898-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:51.552-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:51.903-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:51.903-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:51.904-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:53.330-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:07:53.560-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:53.560-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:53.560-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:53.910-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:53.965-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:53.965-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:07:55.562-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:55.563-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:55.563-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:07:55.973-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:55.973-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:57.569-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:57.569-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:07:58.144-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:54434 #11 (1 connection now open)
+2017-04-30T03:07:58.145-0400 I NETWORK  [conn11] received client metadata from 127.0.0.1:54434 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-04-30T03:08:00.974-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:02.569-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:02.979-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:02.979-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:02.979-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:04.013-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:08:04.573-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:04.573-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:04.573-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:04.975-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:04.976-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:04.976-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:06.579-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:06.579-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:06.579-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:06.981-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:06.982-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:08.584-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:08.585-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:11.844-0400 I ASIO     [NetworkInterfaceASIO-RS-0] Failed asio heartbeat to :27017 - HostUnreachable: An existing connection was forcibly closed by the remote host.
+2017-04-30T03:08:11.982-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:13.586-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:13.988-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:13.989-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:13.989-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:15.468-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:08:15.587-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:15.588-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:15.588-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:15.998-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:15.998-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:15.999-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:17.596-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:17.596-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:17.597-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:18.010-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:18.011-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:19.605-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:19.606-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:23.011-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:24.606-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:25.018-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:25.018-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:25.018-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:26.127-0400 I REPL     [ReplicationExecutor] Not starting an election, since we are not electable due to: Not standing for election because I cannot see a majority (mask 0x1)
+2017-04-30T03:08:26.612-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:26.613-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:26.613-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:27.023-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:27.023-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:27.024-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2017-04-30T03:08:28.619-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:28.619-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:28.619-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2017-04-30T03:08:29.029-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:29.030-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:30.624-0400 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:30.624-0400 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; HostUnreachable: No connection could be made because the target machine actively refused it.
+2017-04-30T03:08:31.729-0400 I COMMAND  [conn11] terminating, shutdown command received
+2017-04-30T03:08:31.729-0400 I NETWORK  [conn11] shutdown: going to close listening sockets...
+2017-04-30T03:08:31.729-0400 I NETWORK  [conn11] closing listening socket: 472
+2017-04-30T03:08:31.730-0400 I NETWORK  [conn11] shutdown: going to flush diaglog...
+2017-04-30T03:08:31.730-0400 I REPL     [conn11] shutting down replication subsystems
+2017-04-30T03:08:31.730-0400 I REPL     [conn11] Stopping replication reporter thread
+2017-04-30T03:08:31.730-0400 I REPL     [conn11] Stopping replication fetcher thread
+2017-04-30T03:08:31.730-0400 I REPL     [conn11] Stopping replication applier thread
+2017-04-30T03:08:31.901-0400 I REPL     [conn11] Stopping replication storage threads
+2017-04-30T03:08:31.903-0400 I FTDC     [conn11] Shutting down full-time diagnostic data capture
+2017-04-30T03:08:31.912-0400 I STORAGE  [conn11] WiredTigerKVEngine shutting down
+2017-04-30T03:08:32.416-0400 I STORAGE  [conn11] shutdown: removing fs lock...
+2017-04-30T03:08:32.416-0400 I CONTROL  [conn11] now exiting
+2017-04-30T03:08:32.416-0400 I CONTROL  [conn11] shutting down with code:0
+2017-04-30T03:08:32.416-0400 I CONTROL  [initandlisten] shutting down with code:0

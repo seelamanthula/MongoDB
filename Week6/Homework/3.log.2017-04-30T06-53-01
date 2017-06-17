@@ -1,0 +1,17 @@
+2017-04-30T02:45:07.423-0400 I CONTROL  [initandlisten] MongoDB starting : pid=6812 port=27019 dbpath=\data\rs3 64-bit host=Lenovo-PC
+2017-04-30T02:45:07.424-0400 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-04-30T02:45:07.424-0400 I CONTROL  [initandlisten] db version v3.4.2
+2017-04-30T02:45:07.424-0400 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-04-30T02:45:07.424-0400 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] modules: none
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] build environment:
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "\data\rs3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "3.log" } }
+2017-04-30T02:45:07.425-0400 I STORAGE  [initandlisten] exception in initAndListen: 29 Data directory \data\rs3 not found., terminating
+2017-04-30T02:45:07.425-0400 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-04-30T02:45:07.425-0400 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] now exiting
+2017-04-30T02:45:07.425-0400 I CONTROL  [initandlisten] shutting down with code:100
